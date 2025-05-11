@@ -200,7 +200,7 @@ if args.do_predict:
 
         with open("predictions.txt", "w", encoding="utf-8") as f:
             for s1, s2, pred in zip(original_test["sentence1"], original_test["sentence2"], preds):
-                f.write(f"{s1.strip()}###{s2.strip()}###{int(pred)}\n\n")
+                f.write(f"{s1.strip()}###{s2.strip()}###{int(pred)}\n")
 
 if args.do_predict_worst:
     print("fvd")
